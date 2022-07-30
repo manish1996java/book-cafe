@@ -1,0 +1,36 @@
+<form action="" [formGroup]="form" style="margin-top:2rem;" (ngSubmit)="onSubmit()" #f="ngForm">
+    <mat-card style="width: 400px;">
+        <mat-card-header>
+            <mat-card-title>
+                Add Categories
+            </mat-card-title> 
+        </mat-card-header>
+        <mat-card-content>
+            <div>
+                <mat-form-field style="width: 100%;" appearance="outline">
+                    <mat-label>Lvl 1</mat-label>
+                    <input matInput formControlName="level1"/>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field style="width: 100%;" appearance="outline">
+                    <mat-label>Lvl 2</mat-label>
+                    <input matInput formControlName="level2"/>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field style="width: 100%;" appearance="outline">
+                    <mat-label>Lvl 3</mat-label>
+                    <input matInput formControlName="level3"/>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field style="width: 100%;" appearance="outline">
+                    <mat-label>Lvl 4</mat-label>
+                    <input matInput formControlName="level4"/>
+                </mat-form-field>
+            </div>
+            <button mat-flat-button [disabled]="!form.valid" color="primary">Sub Categry <mat-icon>add</mat-icon></button>
+        </mat-card-content>
+    </mat-card>
+</form>
