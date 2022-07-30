@@ -66,7 +66,7 @@ const materials = [
   MatPaginatorModule,
   MatChipsModule,
   MatCheckboxModule,
-  MatAutocompleteModule
+  MatAutocompleteModule,
   // MatMomentDateModule
 ];
 
